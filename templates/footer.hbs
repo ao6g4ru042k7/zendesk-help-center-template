@@ -1,0 +1,34 @@
+<footer class="footer text-center">
+   <div class="container">
+         <div class="social_icons">
+            <ul class="social">
+               {{#isnt settings.facebook_url '-'}}
+                  <li><a href="{{settings.facebook_url}}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.twitter_url '-'}}
+                  <li><a href="{{settings.twitter_url}}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.linkedin_url '-'}}
+                  <li><a href="{{settings.linkedin_url}}" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.pinterest_url '-'}}
+                  <li><a href="{{settings.pinterest_url}}" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.instagram_url '-'}}
+                  <li><a href="{{settings.instagram_url}}" target="_blank"><i class="fab fa-instagram"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.youtube_url '-'}}
+                  <li><a href="{{settings.youtube_url}}" target="_blank"><i class="fab fa-youtube"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.github_url '-'}}
+                  <li><a href="{{settings.github_url}}" target="_blank"><i class="fab fa-github"></i></a></li>
+               {{/isnt}}
+            </ul>
+         </div>
+   </div>
+   <aside class="footer-legal text-center">
+      <div class="container">
+         <p>&copy; <span id="year"></span> {{settings.copyright_text}}</p>
+      </div>
+   </aside>
+</footer>   
